@@ -3,7 +3,6 @@ package gmail.pages;
 import gmail.utills.Base;
 import gmail.utills.BasePage;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -38,9 +37,7 @@ public class TestSignIn extends BasePage {
 
     public void fillPassword(String password) {
         passwordElement.sendKeys(password);
-
     }
-
 
     public void pressPasswordNext() {
         JavascriptExecutor executor = (JavascriptExecutor) Base.getDriver();

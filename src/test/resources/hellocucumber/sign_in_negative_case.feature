@@ -1,3 +1,4 @@
+@NegativeTest
 Feature: Sign in negative case
   Sign in to gmail negative case
 
@@ -21,6 +22,6 @@ Feature: Sign in negative case
 
   Scenario: Sign in to gmail with incorrect password case 3
     When Fill email "andrewdud89@gmail.com"
-    When Fill password "!@#$%$"
+    When Fill password ""
     When the result should be Неверный пароль. Повторите попытку или нажмите на ссылку "Забыли пароль?", чтобы сбросить его.
     When Close Brouser
